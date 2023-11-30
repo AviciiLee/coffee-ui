@@ -1,0 +1,10 @@
+$primary-color: #4afc00;
+
+
+.body {
+  color: $primary-color;
+  .container {
+    color:  inherit;
+    transform: translateX(100px);
+  }
+}
