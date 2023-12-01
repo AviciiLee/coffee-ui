@@ -4,9 +4,11 @@
   "description": "ui toolkit for myself",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
-  "main": "dist/index.js",
+  "main": "dist/components/index.js",
   "scripts": {
     "dev": "pnpm -C examples run dev",
     "test": "pnpm -C packages/components run test",
