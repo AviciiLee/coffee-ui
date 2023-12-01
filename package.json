@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "pnpm -C examples run dev",
     "test": "pnpm -C packages/components run test",
-    "build": "rollup -c",
+    "build": "rollup -c && node ./scripts/generate-types.js",
     "postinstall": "node ./scripts/postinstall.js"
   },
   "keywords": [

@@ -5,12 +5,13 @@
     "packages/components/**/*.vue",
     "vue-shim.d.ts"
   ],
-  "exclude": ["src/**/__tests__/*"],
+  "exclude": ["packages/components/**/test/*"],
   "compilerOptions": {
     "composite": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     },
+    "declaration": true
   }
 }
