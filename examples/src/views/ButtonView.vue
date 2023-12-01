@@ -2,7 +2,7 @@
 
 <template>
   <div class="row">
-    <coffee-button></coffee-button>
+    <coffee-button>按钮</coffee-button>
   </div>
 </template>
 

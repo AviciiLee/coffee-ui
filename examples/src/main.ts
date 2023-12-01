@@ -1,5 +1,5 @@
 import './assets/main.css'
-
+import '@coffee-ui/theme-chalk/src/index.scss'
 import CoffeeButton from '@coffee-ui/components/button'
 import { createApp } from 'vue'
 import App from './App.vue'

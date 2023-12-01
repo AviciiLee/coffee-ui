@@ -5,14 +5,14 @@ export default {
 </script>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-const txt = ref('按钮1')
+import type { buttonProps } from './button'
+const props = defineProps<buttonProps>()
 </script>
 
 <template>
   <div>
-    <button>
-      <slot>{{ txt }}</slot>
+    <button class="coffee-button">
+      <slot></slot>
     </button>
   </div>
 </template>
