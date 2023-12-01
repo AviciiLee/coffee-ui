@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": [
+    "env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.vue"
+  ],
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "Node"
+  }
+}
