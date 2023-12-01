@@ -31,12 +31,11 @@ importers:
       ts-node: ^10.9.1
       typescript: ^5.3.2
       vitest: ^0.34.6
-      vue: ^3.3.9
-    dependencies:
+      vue: 3.3.9
+    devDependencies:
       '@coffee-ui/components': link:packages/components
       '@coffee-ui/theme-chalk': link:packages/theme-chalk
       '@coffee-ui/utils': link:packages/utils
-    devDependencies:
       '@rollup/plugin-terser': 0.4.4_rollup@4.5.0
       '@tsconfig/node18': 18.2.2
       '@types/jest': 29.5.10
@@ -1670,7 +1669,7 @@ packages:
     dependencies:
       '@vue/compiler-ssr': 3.3.9
       '@vue/shared': 3.3.9
-      vue: 3.3.9
+      vue: 3.3.9_typescript@5.3.2
 
   /@vue/shared/3.3.9:
     resolution: {integrity: sha512-ZE0VTIR0LmYgeyhurPTpy4KzKsuDyQbMSdM49eKkMnT5X4VfFBLysMzjIZhLEFQYjjOVVfbvUDHckwjDFiO2eA==}
@@ -6060,7 +6059,6 @@ packages:
     resolution: {integrity: sha512-6l+RyNy7oAHDfxC4FzSJcz9vnjTKxrLpDG5M2Vu4SHRVNg6xzqZp6LYSR9zjqQTu8DU/f5xwxUdADOkbrIX2gQ==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
 
   /ufo/1.3.2:
     resolution: {integrity: sha512-o+ORpgGwaYQXgqGDwd+hkS4PuZ3QnmqMMxRuajK/a38L6fTpcE5GPIfrf+L/KemFzfUpeUQc1rRS1iDBozvnFA==}
@@ -6362,6 +6360,7 @@ packages:
       '@vue/runtime-dom': 3.3.9
       '@vue/server-renderer': 3.3.9_vue@3.3.9
       '@vue/shared': 3.3.9
+    dev: true
 
   /vue/3.3.9_typescript@5.2.2:
     resolution: {integrity: sha512-sy5sLCTR8m6tvUk1/ijri3Yqzgpdsmxgj6n6yl7GXXCXqVbmW2RCXe9atE4cEI6Iv7L89v5f35fZRRr5dChP9w==}
@@ -6392,7 +6391,6 @@ packages:
       '@vue/server-renderer': 3.3.9_vue@3.3.9
       '@vue/shared': 3.3.9
       typescript: 5.3.2
-    dev: true
 
   /w3c-xmlserializer/5.0.0:
     resolution: {integrity: sha512-o8qghlI8NZHU1lLPrpi2+Uq7abh4GGPpYANlalzWxyWteJOCsr/P+oPBA49TOLu5FTZO4d3F9MnWJfiMo4BkmA==}
