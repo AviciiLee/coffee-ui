@@ -2,7 +2,8 @@
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "include": [
     "packages/components/**/*.ts",
-    "packages/components/**/*.vue"
+    "packages/components/**/*.vue",
+    "vue-shim.d.ts"
   ],
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
@@ -10,6 +11,6 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
   }
 }
