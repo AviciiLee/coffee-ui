@@ -14,7 +14,10 @@
   "scripts": {
     "dev": "pnpm -C examples run dev",
     "test": "pnpm -C packages/components run test",
-    "build": "rollup -c && node ./scripts/generate-types.js"
+    "build": "rollup -c && node ./scripts/generate-types.js",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "keywords": [
     "coffee-ui",
@@ -52,6 +55,7 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.3.2",
     "vite": "^4.4.11",
+    "vitepress": "1.0.0-rc.31",
     "vitest": "^0.34.6",
     "vue": "3.3.9"
   }
