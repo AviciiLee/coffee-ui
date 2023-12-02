@@ -1,10 +1,7 @@
-<script lang="ts">
-export default {
-  name: 'CoffeeButton'
-}
-</script>
-
 <script setup lang="ts">
+defineOptions({
+  name: 'CoffeeButton'
+})
 const props = withDefaults(
   defineProps<{
     type?: 'default' | 'primary' | 'success' | 'info' | 'danger' | 'warning'

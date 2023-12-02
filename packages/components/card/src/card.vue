@@ -1,10 +1,8 @@
-<script lang="ts">
-export default {
-  name: 'CoffeeCard'
-}
-</script>
 <script setup lang="ts">
-const props = withDefaults(
+defineOptions({
+  name: 'CoffeeCard'
+})
+withDefaults(
   defineProps<{
     width?: number
     imgSrc?: string
