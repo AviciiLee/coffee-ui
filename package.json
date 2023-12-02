@@ -1,12 +1,14 @@
 {
   "name": "@avicii/coffee-ui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ui toolkit for myself",
   "type": "module",
+  "types": "dist/types.d.ts",
   "files": [
     "dist",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "types.d.ts"
   ],
   "main": "dist/index.js",
   "scripts": {
