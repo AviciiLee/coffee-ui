@@ -5,9 +5,9 @@ import chalk from 'chalk'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const componentsDir = path.resolve(__dirname, '..', 'dist', 'components', 'packages', 'components')
+const componentsDir = path.resolve(__dirname, '..', 'dist', 'packages', 'components')
 
-const typesFile = path.resolve(__dirname, '..', 'dist', 'components', 'types.d.ts')
+const typesFile = path.resolve(__dirname, '..', 'dist', 'types.d.ts')
 
 const components = fs.readdirSync(componentsDir)
 

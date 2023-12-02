@@ -10,22 +10,22 @@ export default [
   {
     input: 'packages/components/index.ts',
     output: {
-      dir: 'dist/components',
+      dir: 'dist',
       format: 'esm'
     },
     external: ['vue'],
     plugins: [
-      del({ targets: 'dist/components' }),
+      del({ targets: 'dist' }),
       vue({
         include: ['**/*.vue']
       }),
       typescript({
         tsconfig: 'tsconfig.app.json'
       }),
-      terser(),
-      copy({
-        targets: [{ src: 'packages/components/package.json', dest: 'dist/components' }]
-      })
+      terser()
+      // copy({
+      //   targets: [{ src: 'packages/components/package.json', dest: 'dist/components' }]
+      // })
     ]
   },
   {
