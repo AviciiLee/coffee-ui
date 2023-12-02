@@ -30,6 +30,7 @@ importers:
       ts-jest: ^29.1.1
       ts-node: ^10.9.1
       typescript: ^5.3.2
+      vite: ^4.4.11
       vitest: ^0.34.6
       vue: 3.3.9
     devDependencies:
@@ -39,7 +40,7 @@ importers:
       '@rollup/plugin-terser': 0.4.4_rollup@4.5.0
       '@tsconfig/node18': 18.2.2
       '@types/jest': 29.5.10
-      '@vitejs/plugin-vue': 4.5.0_vue@3.3.9
+      '@vitejs/plugin-vue': 4.5.0_vite@4.5.0+vue@3.3.9
       '@vue/test-utils': 2.4.3_vue@3.3.9
       '@vue/tsconfig': 0.4.0
       autoprefixer: 10.4.16_postcss@8.4.31
@@ -59,6 +60,7 @@ importers:
       ts-jest: 29.1.1_54xw5kgpltul7nflxmyasej66u
       ts-node: 10.9.1_typescript@5.3.2
       typescript: 5.3.2
+      vite: 4.5.0_sass@1.69.5
       vitest: 0.34.6_jsdom@23.0.1+sass@1.69.5
       vue: 3.3.9_typescript@5.3.2
 
@@ -1471,17 +1473,7 @@ packages:
       vite: ^4.0.0 || ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.5.0_@types+node@18.19.0
-      vue: 3.3.9_typescript@5.2.2
-    dev: true
-
-  /@vitejs/plugin-vue/4.5.0_vue@3.3.9:
-    resolution: {integrity: sha512-a2WSpP8X8HTEww/U00bU4mX1QpLINNuz/2KMNpLsdu3BzOpak3AGI1CJYBTXcc4SPhaD0eNRUp7IyQK405L5dQ==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    peerDependencies:
-      vite: ^4.0.0 || ^5.0.0
-      vue: ^3.2.25
-    dependencies:
+      vite: 4.5.0_sass@1.69.5
       vue: 3.3.9_typescript@5.3.2
     dev: true
 
@@ -6231,6 +6223,42 @@ packages:
       fsevents: 2.3.3
     dev: true
 
+  /vite/4.5.0_sass@1.69.5:
+    resolution: {integrity: sha512-ulr8rNLA6rkyFAlVWw2q5YJ91v098AFQ2R0PRFwPzREXOUJQPtFUG0t+/ZikhaOCDqFoDhN6/v8Sq0o4araFAw==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      lightningcss: ^1.21.0
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      lightningcss:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      esbuild: 0.18.20
+      postcss: 8.4.31
+      rollup: 3.29.4
+      sass: 1.69.5
+    optionalDependencies:
+      fsevents: 2.3.3
+    dev: true
+
   /vitest/0.34.6_jsdom@23.0.1+sass@1.69.5:
     resolution: {integrity: sha512-+5CALsOvbNKnS+ZHMXtuUC7nL8/7F1F2DnHGjSsszX8zCjWSSviphCb/NuS9Nzf4Q03KyyDRBAXhF/8lffME4Q==}
     engines: {node: '>=v14.18.0'}
@@ -6376,6 +6404,7 @@ packages:
       '@vue/server-renderer': 3.3.9_vue@3.3.9
       '@vue/shared': 3.3.9
       typescript: 5.2.2
+    dev: false
 
   /vue/3.3.9_typescript@5.3.2:
     resolution: {integrity: sha512-sy5sLCTR8m6tvUk1/ijri3Yqzgpdsmxgj6n6yl7GXXCXqVbmW2RCXe9atE4cEI6Iv7L89v5f35fZRRr5dChP9w==}

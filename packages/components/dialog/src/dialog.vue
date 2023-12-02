@@ -4,10 +4,10 @@ defineOptions({
 })
 withDefaults(
   defineProps<{
-    visible: boolean
+    visible?: boolean
     title: string
-    width: string
-    top: string
+    width?: string
+    top?: string
   }>(),
   {
     visible: false,
